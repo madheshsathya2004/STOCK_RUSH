@@ -1,0 +1,77 @@
+/* Background and Container Styling */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3a8a, #9333ea);
+  color: white;
+  text-align: center;
+}
+
+/* Title Styling */
+.homepage-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+  animation: pulse 2s infinite alternate;
+}
+
+/* Image Styling */
+.homepage-image {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.homepage-image:hover {
+  transform: scale(1.05);
+}
+
+/* Input Field */
+.homepage-input {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.homepage-input:focus {
+  border-color: yellow;
+  box-shadow: 0 0 8px yellow;
+}
+
+/* Button */
+.homepage-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: #facc15;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.homepage-button:hover {
+  background-color: #eab308;
+  transform: scale(1.1);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  }
+}
